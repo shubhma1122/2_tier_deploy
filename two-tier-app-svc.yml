@@ -5,9 +5,9 @@ metadata:
 spec:
   selector:
     app: two-tier-app
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 80
       targetPort: 5000
-      nodePort: 30004
-  type: NodePort
+    
